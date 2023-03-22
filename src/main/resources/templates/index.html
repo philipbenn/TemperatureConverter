@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+    <h1>Temperature converter</h1>
+</head>
+<body>
+    <br>
+    <div class="box">
+    <form action="/C2F" method="post">
+        <label>Celcius to fahrenheit</label>
+        <input name="startDegree" placeholder="degree" type="number">
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="/F2C" method="post">
+        <label>Fahrenheit to celcius</label>
+        <input name="startDegree" placeholder="degree" type="number">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1 th:text="${convertedDegree}"></h1>
+    </div>
+</body>
+</html>
