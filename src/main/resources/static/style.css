@@ -3,7 +3,22 @@
     width: 450px;
     border: 1px solid black;
     padding: 4px;
-    background-color: paleturquoise;
+    background-color: lightskyblue;
     float: right;
     margin-right: 60px;
+}
+
+input[name="C2F"]{
+    height: 20px;
+    width: 40px;
+    background-color: limegreen;
+    border-radius: 10px;
+}
+
+input[name="F2C"]{
+    height: 20px;
+    width: 40px;
+    background-color: turquoise;
+    border-radius: 10px;
+    margin-left: 25px;
 }

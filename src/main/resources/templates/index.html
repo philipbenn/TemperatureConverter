@@ -3,25 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Temperature converter</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" src="/css/screen.css?v={CURRENT_TIMESTAMP}">
     <h1>Temperature converter</h1>
 </head>
 <body>
-    <br>
-    <div class="box">
-    <form action="/C2F" method="post">
-        <label>Celcius to fahrenheit</label>
-        <input name="startDegree" placeholder="degree" type="number">
-        <input type="submit" value="Submit">
-    </form>
+<br>
+<div class="box">
 
-    <form action="/F2C" method="post">
-        <label>Fahrenheit to celcius</label>
-        <input name="startDegree" placeholder="degree" type="number">
-        <input type="submit" value="Submit">
-    </form>
+    <form action="/" method="post">
+        <label>Enter temperature:</label>
+        <input name="startDegree" type="text">
 
-    <h1 th:text="${convertedDegree}"></h1>
-    </div>
+        <p>Converted to: <span th:text="${convertedDegree}"></span></p>
+
+        <input id="c2f" type="submit" value="C2F" name="C2F">
+        <input type="submit" value="F2C" name="F2C">
+    </form>
+</div>
 </body>
 </html>
